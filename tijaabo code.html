@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tijaabada Koowaad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f6ff;
+      color: #172554;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    main {
+      background: white;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      text-align: center;
+      max-width: 420px;
+      margin: 20px;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 18px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Waa shaqaynayaa! 🎉</h1>
+    <p>Kani waa file-kaaga koowaad ee HTML si aad ugu tijaabiso GitHub.</p>
+    <button onclick="testCode()">Tijaabi Code-ka</button>
+    <p id="result">Riix badhanka si aad u tijaabiso.</p>
+  </main>
+
+  <script>
+    function testCode() {
+      document.getElementById("result").textContent =
+        "Guul! HTML, CSS iyo JavaScript way shaqaynayaan.";
+    }
+  </script>
+</body>
+</html>
